@@ -1,0 +1,288 @@
+.bl-background {
+    background: #cdcbcb;
+    padding: 2%;
+    height: 600px;
+}
+
+.bl-list {
+    background: white;
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 59%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.bl-bought {
+    background: white;
+    display: inline-block;
+    margin-top: 5%;
+    margin-right: 5%;
+    float: right;
+    width: 30%;
+    height: 220px;
+    border-radius: 5px;
+}
+
+.bl-row {
+    display: block;
+    padding: 10px;
+    border: 1px solid #cdcbcb;
+    height: 41px;
+    vertical-align: middle;
+}
+
+.bl-line {
+    display: block;
+    padding: 10px;
+    border: 1px solid #cdcbcb;
+    border-radius: 5px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.bl-product {
+    display: inline-block;
+    width: 45%;
+}
+
+.bl-product2 {
+    background: #cdcbcb;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    height: 20px;
+}
+
+.bl-number {
+    display: inline-block;
+    background: #f08111;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+}
+
+.bl-badge {
+    position: fixed;
+    left: 20px;
+    bottom: -140px;
+    background: blueviolet;
+    color: white;
+    width: 170px;
+    height: 180px;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-top: 20px;
+    transition:	all	1s	ease;
+    }
+
+.bl-badge2 {
+    visibility: hidden;
+}
+
+@media print {
+    .bl-badge{
+        visibility: hidden;
+    }
+    .bl-badge2{
+        visibility: visible;
+        position: fixed;
+        left: 20px;
+        bottom: -10px;
+        background: white;
+        color: blueviolet;
+        border: 5px solid;
+        border-color: blueviolet;
+        width: 170px;
+        height: 180px;
+        border-radius: 10px;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+}
+
+.bl-badge:hover {
+    background: blue;
+    bottom: -10px;
+}
+
+/*Кнопки*/
+.bl-minus {
+    background: #f01019;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.bl-minus::after {
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 8px;
+	color: white;
+    background-color: blueviolet;
+	content: attr(data-tooltip);
+	margin-top: -24px;
+	opacity: 0; 
+	padding: 3px 7px;
+	position: absolute;
+	visibility: hidden;
+	transition: all 0.4s ease-in-out; 
+}
+		
+.bl-minus:hover::after {
+	opacity: 1; 
+	visibility: visible;
+}
+
+.bl-label {
+    background: #cdcbcb;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+}
+.bl-plus {
+    background: #04a613;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.bl-plus::after {
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 8px;
+	color: white;
+    background-color: blueviolet;
+	content: attr(data-tooltip);
+	margin-top: -24px;
+	opacity: 0; 
+	padding: 3px 7px;
+	position: absolute;
+	visibility: hidden;
+	transition: all 0.4s ease-in-out; 
+}
+		
+.bl-plus:hover::after {
+	opacity: 1; 
+	visibility: visible;
+}
+
+.bl-add {
+    display: inline-block;
+    background: #0615bf;
+    float: right;
+    color: white;
+}
+
+.bl-add::after {
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 8px;
+	color: white;
+    background-color: blueviolet;
+	content: attr(data-tooltip);
+	margin-top: -24px;
+	opacity: 0; 
+	padding: 3px 7px;
+	position: absolute;
+	visibility: hidden;
+	transition: all 0.4s ease-in-out; 
+}
+		
+.bl-add:hover::after {
+	opacity: 1; 
+	visibility: visible;
+}
+
+.bl-buttons {
+    display: inline-block;
+    width: 20%;
+    float: right;
+}
+
+@media	(max-width:	950px)	{
+    .bl-product {
+        width: 15%;
+    }
+    
+    .bl-buttons {
+        width: 35%;
+    }
+    
+    .bl-product2 {
+        height: 3px;
+    }
+    
+    .bl-number {
+        padding: 5px;
+        width: 1px;
+        height: 1px;
+    }
+}
+
+@media	(max-width:	500px)	{
+    .bl-list {
+        width: 100%;
+        margin: 1%;
+    }
+    .bl-bought {
+        width: 100%;
+        margin: 1%;
+        float: none;
+    }
+}
+
+.bl-bought2 {
+    background: #cdcbcb;
+    border-radius: 5px;
+    float: left;
+    width: 70%;
+    height: 40px;
+}
+
+.bl-bought2::after {
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 8px;
+	color: white;
+    background-color: blueviolet;
+	content: attr(data-tooltip);
+	margin-top: -24px;
+	opacity: 0; 
+	padding: 3px 7px;
+	position: absolute;
+	visibility: hidden;
+	transition: all 0.4s ease-in-out; 
+}
+		
+.bl-bought2:hover::after {
+	opacity: 1; 
+	visibility: visible;
+}
+
+.bl-x {
+    background: #f01019;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.bl-x::after {
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 8px;
+	color: white;
+    background-color: blueviolet;
+	content: attr(data-tooltip);
+	margin-top: -24px;
+	opacity: 0; 
+	padding: 3px 7px;
+	position: absolute;
+	visibility: hidden;
+	transition: all 0.4s ease-in-out; 
+}
+		
+.bl-x:hover::after {
+	opacity: 1; 
+	visibility: visible;
+}
